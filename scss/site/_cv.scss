@@ -1,0 +1,76 @@
+.section-wrapper--cv {
+    background-color: $section_gray;
+    @include breakpoint(large){
+        background-image: url("../img/img-girl.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-color: transparent;
+    }
+}
+
+.site-cv {
+    @include breakpoint(large){
+        @include clearfix;
+        position: relative;
+    }
+}
+
+.site-cv__text {
+    @include breakpoint(large){
+        float: right;
+        width: 50%;
+    }
+}
+
+.site-cv__text-title {
+    text-align: center;
+    @include breakpoint(large){
+        text-align: left;
+    }
+}
+
+.site-cv__text-desc {
+    text-align: justify;
+}
+
+.site-cv__img {
+    display: none;
+    @include breakpoint(large){
+        display: block;
+        position: absolute;
+        min-height: 100%;
+        min-width: 64.375em;
+        width: 100%;
+        height: auto;
+        top: 0;
+        left: 0;
+    }
+
+}
+
+.site-cv__upload {
+    font-weight: bold;
+    display: block;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.site-cv__button {
+    background-color: $color-light;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding: 1rem 3rem;
+    border-radius: 12px;
+    display: inline-block;
+    margin: 1rem auto;
+    &:hover {
+        background-color: darken($color-light, 15%);
+    }
+
+    @include breakpoint(large){
+        display: inline-block;
+        padding: 1rem 3rem;
+    }
+}

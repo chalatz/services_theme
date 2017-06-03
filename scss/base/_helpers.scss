@@ -1,0 +1,22 @@
+.light-colored {
+    color: $color-light;
+}
+
+.floated-right {
+    @include breakpoint(medium){
+        float: right;
+    }
+
+}
+
+.floated-left {
+    @include breakpoint(medium){
+        float: left;
+    }
+
+}
+
+.floated {
+    display: block;
+    text-align: center;
+}

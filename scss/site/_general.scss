@@ -1,0 +1,33 @@
+body {
+    background-color: #fff;
+    color: $color-dark;
+    @include font_raleway;
+}
+
+.main-content {
+    margin: 4rem auto;
+    max-width: 1200px;
+}
+
+.section-wrapper {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.section-wrapper--grayed {
+    background-color: $section_gray;
+}
+
+.site-section {
+    width: 90%;
+    margin: 3rem auto;
+    @include breakpoint(small){
+        width: 80%;
+    }
+    @include breakpoint(medium){
+        width: 65%;
+    }
+    @include breakpoint(large){
+        width: $large_width;
+    }          
+}

@@ -1,0 +1,39 @@
+.site-footer {
+    background-color: $color-light;
+    margin-top: 2rem;
+    padding: 2rem 0;
+    color: #fff;
+}
+
+.site-footer__content {
+    width: 90%;
+    margin: 0 auto;
+    @include clearfix;
+    @include breakpoint(small){
+        width: 80%;
+    }
+    @include breakpoint(medium){
+        width: 65%;
+    }
+    @include breakpoint(large){
+        width: $large_width;
+    } 
+}
+
+.site-footer__icon-link {
+    margin-right: 1rem;
+    color: $icons_fill_color;
+    &:hover {
+        color: darken($icons_fill_color, 20%);
+    }
+}
+
+.icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 1rem;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}

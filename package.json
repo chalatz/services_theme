@@ -1,0 +1,28 @@
+{
+  "name": "services-theme",
+  "version": "0.1.0",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "grunt": "~0.4.5",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-uglify": "^3.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0",
+    "load-grunt-tasks": "^3.5.2"
+  },
+  "description": "HTML/CSS theme from PSD: Themeunix- [Responsive Service Template](https://dribbble.com/shots/2382366-Free-PSD-Themeunix-Responsive-Service-Template)",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt-sass": "^2.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://chalatz@bitbucket.org/chalatz/services_theme.git"
+  },
+  "author": "chalatz",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/chalatz/services_theme#readme"
+}

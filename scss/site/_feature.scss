@@ -1,0 +1,52 @@
+.site-feature {
+    @include breakpoint(large){
+        @include clearfix;
+    }
+}
+
+.site-feature__text {
+    @include breakpoint(large){
+        float: left;
+        width: 50%;
+    }
+}
+
+.site-feature__text-title {
+    text-align: center;
+    @include breakpoint(large){
+        text-align: left;
+    }
+}
+
+.site-feature__text-desc {
+    text-align: justify;
+}
+
+.site-feature__text-title,
+.site-feature__text-desc {
+    @include breakpoint(large){
+        padding-right: 7rem;
+    }
+}
+
+.site-feature__img {
+    display: none;
+    @include breakpoint(large){
+        overflow: hidden;
+        float: right;
+        display: inline;
+        width: 45%;
+    }
+
+    img {
+        float: right;
+    }
+}
+
+.site-feature__read-more {
+    font-weight: bold;
+    display: block;
+    &:hover {
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,135 @@
+.site-header {
+     text-align: center;
+     margin-bottom: 2rem;
+     @include breakpoint(large){
+        position: relative;
+        @include clearfix;
+     }
+}
+
+.site-header__top-wrapper {
+    @include breakpoint(large){
+        @include clearfix;
+        width: $large_width;
+        margin: 0 auto;
+    }
+}
+
+.site-logo,
+.site-nav {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.site-logo {
+    @include font_raleway(700);
+    display: inline-block;
+    color: $color-light;
+    font-size: 2rem;
+    border-bottom: 2px solid #fff;
+
+    &:hover {
+        border-bottom: 2px solid $color-light;
+    }
+
+    @include breakpoint(large) {
+        float: left;
+    }
+}
+
+.site-nav {
+    @include font_lato(700);
+    @include breakpoint(large) {
+        display: inline-block;
+        float: right;
+        margin-right: 27rem;
+    }
+}
+
+.site-nav__item {
+    padding: .5rem 0;
+    font-size: 1.1rem;
+    display: inline-block;
+    margin-right: 2rem;    
+}
+
+.site-nav__item--active,
+.site-nav__item:hover
+ {
+    color: $color-light;
+    border-bottom: 2px solid $color-light;
+}
+
+.site-header__hero {
+    position: relative;
+    @include breakpoint(large){
+        position: absolute;
+        top: -4rem;
+        right: 0;
+        z-index: -100;
+    }
+}
+
+.site-header__hero-img {
+    max-height: 350px;
+    @include breakpoint(large){
+        max-height: 100%;
+    }
+}
+
+.site-header__bg-gradient {
+    @include gradient(rgba(255, 255, 255, 0), #fff 90%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.site-header__slogan {
+    position: relative;
+    top: -1.8rem;
+    margin-left: auto;
+    margin-right: auto;
+    @include breakpoint(large){
+        text-align: left;
+        width: $large_width;        
+        margin-top: 20rem;
+        margin-left: auto;
+        margin-right: auto;
+    }              
+}
+
+.site-header__slogan-text {
+    margin-bottom: 1rem;
+    @include breakpoint(large){
+        width: 35rem;
+    }
+}
+
+.site-header__message {
+    @include breakpoint(large){
+        padding: 4rem;
+        margin-top: 18rem;
+    }    
+}
+
+.site-header__slogan-button {
+    background-color: $color-light;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    display: block;
+    margin: 1em auto;
+    max-width: 48em;
+    &:hover {
+        background-color: darken($color-light, 15%);
+    }
+
+    @include breakpoint(large){
+        display: inline-block;
+        padding: 1rem 3rem;
+    }
+}

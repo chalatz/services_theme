@@ -1,0 +1,83 @@
+.site-testimonials {
+    text-align: center;
+}
+
+.site-testimonials__clients {
+    @include clearfix;
+    position: relative;
+}
+
+.site-testimonials__client-wrapper {
+    margin: 3rem 0;
+    padding: 0 2rem;
+    @include breakpoint(medium){
+        padding: 0 1rem;
+    }
+    @include breakpoint(large){
+        padding: 0 3rem;
+    }    
+}
+
+.site-testimonials__client {
+    border: 1px solid #e0e0e0;
+}
+
+.site-testimonials__client-logo {
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.site-testimonials__client-logo__img {
+    margin: 0 auto;
+}
+
+.site-testimonials__client-quote {
+    padding: 1rem;
+    font-style: italic;
+    line-height: 2;
+}
+
+.site-testimonials__client-signature {
+    padding: 1rem;
+    font-family: 'Mr De Haviland', cursive;
+    font-size: 2.6rem;
+}
+
+.site-testimonials__client-role {
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.slick-prev,
+.slick-next {
+    position: absolute;
+    display: block;
+    height: 30px;
+    width: 30px;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    padding: 0;
+    border: none;
+    outline: none;
+    color: $arrow_fill_color;
+    background: transparent;
+    &:hover {
+        cursor: pointer;
+        color: darken($arrow_fill_color, 20%);
+    }   
+}
+
+.slick-prev {
+    left: -20px;
+}
+.slick-next {
+    right: -20px;
+}
+
+.arrow {
+    fill: currentColor;
+}
