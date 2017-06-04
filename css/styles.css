@@ -383,6 +383,9 @@ template {
 .floated {
   display: block;
   text-align: center; }
+  @media (min-width: 50em) {
+    .floated {
+      text-align: left; } }
 
 html {
   font-size: 62.5%; }
@@ -395,8 +398,6 @@ body {
 a {
   text-decoration: none;
   color: #3d3d3d; }
-  a:hover {
-    text-decoration: underline; }
 
 img {
   max-width: 100%; }
@@ -899,6 +900,8 @@ body {
     display: table; }
   .site-footer__content:after {
     clear: both; }
+  .site-footer__content a:hover {
+    text-decoration: underline; }
   @media (min-width: 25.125em) {
     .site-footer__content {
       width: 80%; } }

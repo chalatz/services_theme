@@ -9,6 +9,9 @@
     width: 90%;
     margin: 0 auto;
     @include clearfix;
+    a:hover {
+        text-decoration: underline;
+    }
     @include breakpoint(small){
         width: 80%;
     }
